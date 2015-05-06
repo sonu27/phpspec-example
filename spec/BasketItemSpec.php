@@ -7,7 +7,7 @@ use Prophecy\Argument;
 
 class BasketItemSpec extends ObjectBehavior
 {
-	function let()
+    function let()
     {
         $this->beConstructedWith(new \Sku('5.50'));
     }
@@ -19,8 +19,8 @@ class BasketItemSpec extends ObjectBehavior
 
     function its_quantity_can_be_incremented()
     {
-    	$this->incrementQuantity();
-    	$this->getQuantity()->shouldBe(2);
+        $this->incrementQuantity();
+        $this->getQuantity()->shouldBe(2);
     }
 
     function its_quantity_can_be_deincremented(\Sku $sku)

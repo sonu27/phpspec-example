@@ -7,10 +7,10 @@ use Prophecy\Argument;
 
 class SkuSpec extends ObjectBehavior
 {
-	function let()
-	{
-		$this->beConstructedWith(14.99);
-	}
+    function let()
+    {
+        $this->beConstructedWith(14.99);
+    }
 
     function it_is_initializable()
     {
@@ -19,6 +19,6 @@ class SkuSpec extends ObjectBehavior
 
     function it_should_output_price()
     {
-    	$this->getPrice()->shouldBe(14.99);
+        $this->getPrice()->shouldBe(14.99);
     }
 }

@@ -2,29 +2,31 @@
 
 class BasketItem
 {
-	private $sku;
-	private $quantity;
+    private $sku;
+    private $quantity;
 
-	public function __construct(Sku $sku, $quantity = 1)
-	{
-		$this->sku = $sku;
-		$this->quantity = $quantity;
-	}
+    public function __construct(Sku $sku, $quantity = 1)
+    {
+        $this->sku = $sku;
+        $this->quantity = $quantity;
+    }
 
-	public function getQuantity() {
-		return $this->quantity;
-	}
+    public function getQuantity()
+    {
+        return $this->quantity;
+    }
 
     public function incrementQuantity()
     {
-		$this->quantity++;
+        $this->quantity++;
     }
 
-	public function deincrementQuantity() {
-		if ($this->quantity > 1) {
-			$this->quantity--;
-		}
-	}
+    public function deincrementQuantity()
+    {
+        if ($this->quantity > 1) {
+            $this->quantity--;
+        }
+    }
 
     public function getSku()
     {
@@ -33,6 +35,6 @@ class BasketItem
 
     public function getTotal()
     {
-    	return $this->quantity * $this->sku->getPrice();
+        return $this->quantity * $this->sku->getPrice();
     }
 }

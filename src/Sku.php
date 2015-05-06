@@ -2,7 +2,7 @@
 
 class Sku
 {
-	private $price;
+    private $price;
 
     public function __construct($price)
     {
