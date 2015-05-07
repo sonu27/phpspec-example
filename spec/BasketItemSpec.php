@@ -9,7 +9,7 @@ class BasketItemSpec extends ObjectBehavior
 {
     function let()
     {
-        $this->beConstructedWith(new \Sku('5.50'));
+        $this->beConstructedWith(new \Sku(1, '5.50'));
     }
 
     function it_is_initializable()

@@ -10,8 +10,8 @@ class BasketSpec extends ObjectBehavior
     function let()
     {
         $items = [
-            new \BasketItem(new \Sku(9.99)),
-            new \BasketItem(new \Sku(12.99)),
+            new \BasketItem(new \Sku(1, 9.99)),
+            new \BasketItem(new \Sku(2, 12.99)),
         ];
 
         $this->beConstructedWith($items);

@@ -9,7 +9,7 @@ class SkuSpec extends ObjectBehavior
 {
     function let()
     {
-        $this->beConstructedWith(14.99);
+        $this->beConstructedWith(1, 14.99);
     }
 
     function it_is_initializable()
